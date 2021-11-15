@@ -1,0 +1,27 @@
+Basic project layout for flask
+- server.py
+- app/
+    - __init__.py
+    - config/
+        - mysqlconnection.py
+    - controllers/
+        - public.py
+        - private.py
+    - models/
+        - user.py
+        - other class files
+    - static/
+        - css/
+            - styles.css
+        - js/
+            - scripts.js
+        - images/
+            - any images
+    - templates/
+        - index.html
+        - menu.html
+        - dashboard.html
+        - create.html
+        - view.html
+        - update.html
+        
