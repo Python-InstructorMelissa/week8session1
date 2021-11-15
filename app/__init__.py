@@ -1,5 +1,6 @@
 from flask import Flask
-from .env import KEY
+import os
+print( os.environ.get("API_KEY") )
 
 app = Flask(__name__)
-app.secret_key = KEY
+app.secret_key = os.environ.get("KEY")
