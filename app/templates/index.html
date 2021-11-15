@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='https://beedevservices.github.io/beedev-css/framework/beedev.css'>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <title>Inventory app</title>
+    <title>SuperHero API App</title>
 </head>
 <body>
     <header>
-        <h1>Inventory Application</h1>
+        <h1>SuperHero Application</h1>
     </header>
     <main>
         {% with messages = get_flashed_messages() %}
@@ -23,8 +23,8 @@
         <div class="row">
             <form action="/login" method='post' class='index'>
                 <section>
-                    <label for="username">UserName: </label>
-                    <input type="text" name='username'>
+                    <label for="email">Email: </label>
+                    <input type="text" name='email'>
                 </section>
                 <section>
                     <label for="password">Password: </label>
@@ -42,12 +42,8 @@
                     <input type="text" name='lastName'>
                 </section>
                 <section>
-                    <label for="username">Username: </label>
-                    <input type="text" name="username">
-                </section>
-                <section>
-                    <label for="uImg">Link to Profile Img: </label>
-                    <input type="text" name="uImg">
+                    <label for="email">Email: </label>
+                    <input type="text" name="email">
                 </section>
                 <section>
                     <label for="password">Password: </label>
@@ -62,7 +58,7 @@
         </div>
     </main>
     <footer>
-        Made by Melissa
+        <p>©2021 Made By Melissa</p>
     </footer>
 </body>
 </html>

@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SuperHero API App</title>
 </head>
 <body>
     <header>
-        <h1>Welcome, {{}} to our API app</h1>
+        <h1>Welcome, {{user.firstName}} to our API app</h1>
         <nav>
             {% block menu %} {% include 'menu.html' %} {% endblock menu %}
         </nav>
     </header>
     <main></main>
-    <footer>©</footer>
+    <footer>
+        <p>©2021 Made By Melissa</p>
+    </footer>
 </body>
 </html>
