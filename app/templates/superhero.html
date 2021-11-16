@@ -16,8 +16,14 @@
         </nav>
     </header>
     <main>
-        <button onclick="getToon()">Button for Toon</button>
-        <div id="toon"></div>
+        <form id="searchForm" onsubmit="search(event)" >
+            <h2>Search</h2>
+            <input type="text" name="query">
+            <input type="submit" value="Search" >
+        </form>
+        <form id="searchForm2" onsubmit="search(event)" >
+            <button>Get Tune</button>
+        </form>
     </main>
     <footer>
         <p>©2021 Made By Melissa</p>

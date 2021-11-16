@@ -5,7 +5,7 @@ EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
 
 
 class User:
-    db_name = 'week7_inventory'
+    db_name = 'week8'
     def __init__(self, data):
         self.id = data['id']
         self.firstName = data['firstName']
@@ -20,7 +20,7 @@ class User:
         isValid = True
         query = "SELECT * FROM user WHERE email = %(email)s;"
         results = connectToMySQL(User.db_name).query_db(query,user)
-        if len(results) >= 1:
+        if len(results) > 1:
             isValid = False
             flash("That email is already in the system!")
         if len(user['password']) < 6:

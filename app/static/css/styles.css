@@ -1,0 +1,27 @@
+body {
+  background-color: blueviolet;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main #toon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body main #toon img {
+  height: 150px;
+  padding: 1em;
+  margin: 1em;
+  background-color: green;
+}

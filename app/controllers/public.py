@@ -3,6 +3,7 @@ from flask import Flask, render_template, redirect, session, request, flash
 from  flask_bcrypt import Bcrypt
 from app.models.user import User
 
+
 bcrypt = Bcrypt(app)
 
 # Main landing page - contains log/reg
@@ -20,7 +21,6 @@ def register():
         'firstName': request.form['firstName'],
         'lastName': request.form['lastName'],
         'email': request.form['email'],
-        'uImg': request.form['uImg'],
         'password': bcrypt.generate_password_hash(request.form['password'])
     }
     id = User.save(newUser)
