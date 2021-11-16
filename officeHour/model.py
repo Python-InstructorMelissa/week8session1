@@ -11,4 +11,4 @@
 # validation method
 
 # instance methods:
-# these could be any functions that say return the full name as a return 
+# these could be any functions that say return the full name
