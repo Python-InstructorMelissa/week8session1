@@ -49,21 +49,27 @@
                     <tr>
                         <th>Note</th>
                         <th>Privacy</th>
-                        <th>Save Note</th>
                         <th>Actions</th>
                     </tr>
                     {% for note in notes %}
-                        <tr>
-                            <td>{{note.note}}</td>
-                            
-                            {% if note.private == 0 %}
-                                <td>Not private</td>
-                            {% else %}
-                                <td>Private Note</td>
+                        {% if user.id == note.user_id %}
+                            {% if note.private == 1 %}
+                                <tr>
+                                    <td>{{note.note}}</td>
+                                    <td>Your Private Note</td>
+                                    <td></td>
+                                </tr>
                             {% endif %}
-                            <td></td>
-                            <td></td>
-                        </tr>
+                        {% endif %}
+                    {% endfor %}
+                    {% for note in notes %}
+                        {% if note.private == 0 %}
+                            <tr>
+                                <td>{{note.note}}</td>
+                                <td>Public Notes</td>
+                                <td></td>
+                            </tr>
+                        {% endif %}
                     {% endfor %}
                 </table>
             </div>

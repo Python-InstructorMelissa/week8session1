@@ -2,7 +2,7 @@
 <html lang="en">
 <body>
     {% block menu %}
-    <a href="/">Home</a>
+    <a href="/dashboard">Home</a>
     {% if user %}
         <a href="/user/{{user.id}}/list/">Your Lists</a>
         <a href="/api/looneytunes/">LooneyTunes API</a>

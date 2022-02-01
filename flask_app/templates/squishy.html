@@ -25,26 +25,9 @@
         {% endwith %}
     </div>
     <main>
-        <div class="row">
-            <form action="/list/create/" method='post'>
-                <section>
-                    <label for="name">List Name: </label>
-                    <input type="text" name="name">
-                </section>
-                <section>
-                    <input type="hidden" name="user_id" value={{user.id}}>
-                </section>
-                <button>Save List</button>
-            </form>
-            <div class="column">
-                {% for list in lists %}
-                    <div class="row">
-                        <h3>{{list.name}}</h3>
-                        <a href="/list/{{list.id}}/view">View List</a>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
+            <h1>Lets look at some Squishies</h1>
+            <button onclick='getSquishy()'>Get Squishy</button>
+            <div id="squishy" class='api'></div>
     </main>
     <footer>
 

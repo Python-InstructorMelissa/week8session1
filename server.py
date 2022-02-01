@@ -1,5 +1,5 @@
-from app import app
-from app.controllers import public, private
+from flask_app import app
+from flask_app.controllers import users, savedLists, notes, api
 
 if __name__ ==  "__main__":
     app.run(debug=True)
