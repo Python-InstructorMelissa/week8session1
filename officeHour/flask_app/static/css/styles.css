@@ -1,0 +1,105 @@
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: #008000;
+}
+table,
+td,
+tr,
+th {
+  border: 5px groove #f5f5a9;
+}
+tr,
+td,
+th {
+  padding: 1em;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d3cece;
+  color: #008000;
+}
+body header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+body header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  background-color: #f5f5a9;
+  justify-content: space-evenly;
+  padding: 1em;
+  border-radius: 40%;
+}
+body .messages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #008000;
+  color: #d3cece;
+}
+body .messages h5 {
+  padding: 1em 2em;
+  font-size: 1.1em;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+body main .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  justify-content: space-evenly;
+  margin: 1em;
+}
+body main .row form {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .row form section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body main #gitHub {
+  flex-wrap: wrap;
+}
+body main #gitHub .git {
+  border: 5px groove #f5f5a9;
+  margin: 1em;
+  padding: 1em;
+}
+body main #gitHub .git img {
+  max-width: 200px;
+}

@@ -1,0 +1,90 @@
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: @font;
+}
+table, td, tr, th {
+    border: @border;
+}
+tr, td, th {
+    padding: 1em;
+}
+@font: #008000;
+@bg: #d3cece;
+@altbg: #f5f5a9;
+@border: 5px groove @altbg;
+
+
+body {
+    .flexcolumn();
+    background-color: @bg;
+    color: @font;
+
+    header {
+        .flexcolumn();
+        width: 95%;
+
+        nav {
+            .flexrow();
+            width: 95%;
+            background-color: @altbg;
+            justify-content: space-evenly;
+            padding: 1em;
+            border-radius: 40%;
+        }
+    }
+    .messages {
+        .flexcolumn();
+        background-color: @font;
+        color: @bg;
+
+        h5 {
+            padding: 1em 2em;
+            font-size: 1.1em;
+        }
+    }
+    main {
+        .flexcolumn();
+        width: 95%;
+
+        .row {
+            .flexrow();
+            width: 95%;
+            justify-content: space-evenly;
+            margin: 1em;
+
+            form {
+                margin-top: 2em;
+                .flexcolumn();
+
+                section {
+                    .flexrow();
+                }
+            }
+        }
+        #gitHub {
+            flex-wrap: wrap;
+
+            .git {
+                border: @border;
+                margin: 1em;
+                padding: 1em;
+
+                img {
+                    max-width: 200px;
+                }
+            }
+        }
+    }
+}
